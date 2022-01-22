@@ -1,0 +1,46 @@
+//reset
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+}
+h1{
+    color:red;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+html{
+   font-size: 62.5%; 
+}
+
+html,body{
+    overflow-x: hidden;
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+}
+.container {
+    width: 100%;
+    max-width: 124.6rem;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+@import '_mixins.scss';
+@import '_variables.scss';
+@import '_animations.scss';
+@import '_header.scss';
+@import '_s-hero.scss';
+@import '_s-brand.scss';
