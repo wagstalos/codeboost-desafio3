@@ -61,7 +61,7 @@ header{
     
 }
 
-@include responsive(600px){
+@include responsive(800px){
     header{
         .itens{
             display: none;
