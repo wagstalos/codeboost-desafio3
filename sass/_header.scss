@@ -112,12 +112,14 @@ header{
             position: absolute;
             top: 12%;
             right: 12px;
-            background-color: #33313a;
-            color: gray;
+            background-color: #2A2E49;
+            color: rgb(255, 255, 255);
             align-items: center;
             padding: 20px;
             border-radius: 10px;
             display: none;
+            z-index: 10;
+            display: flex;
         }
         .active{
             display: block;
