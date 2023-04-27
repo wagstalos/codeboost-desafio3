@@ -172,3 +172,43 @@
         }
     }
 }
+
+@include responsive(600px){
+    .s-details{
+        ul{
+            li{
+                margin-right: 12px;
+            }
+        }
+
+        .d-flex{
+            flex-direction: column;
+
+            .card-main{
+                width: 100%;
+                flex-direction: column;
+                padding: 8px;
+
+                .card-main__img{
+                    max-width: 100%;
+                    margin-right: 0;
+                    margin-left: 16px;
+                }
+
+                .card-main__footer{
+                    margin-top: 20px;
+                }
+            }
+
+            .card-secundary{
+                width: 100%;
+                margin: 20px 0;
+
+                .card-small{
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+    
+}

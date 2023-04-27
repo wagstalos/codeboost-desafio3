@@ -45,3 +45,23 @@
         margin-left: 33px;
     }
 }
+
+@include responsive(600px){
+    .s-hero{
+        h1{
+            font-size: 58px;
+        }
+
+        ul{
+            margin-top: 20px;
+        }
+
+        button{
+            width: 100%;
+        }
+
+        span{
+            display: none;
+        }
+    } 
+}
