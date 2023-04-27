@@ -43,7 +43,8 @@ header{
 
     .itens-input{
         box-sizing: border-box;
-        width: 296.74px;
+        min-width: 290px;
+        // max-width: 200.74px;
         height: 52px;
         font-size: 14px;
         position: relative;

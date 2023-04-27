@@ -1,4 +1,6 @@
 .s-hero{    
+    position: sticky;
+    z-index: 5;
     h1{
         color:$white;
         font-size:72px;
