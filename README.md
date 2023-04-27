@@ -1,7 +1,9 @@
 # codeboost-Gaminsany
 
-Desafio para Insany ultilizando 
+Desafio para Insany 
 
-##SASS
-##HTML
-##Javascript
+link: https://wagstalos.github.io/codeboost-desafio3/
+
+#SASS
+#HTML
+#Javascript

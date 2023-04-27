@@ -60,14 +60,15 @@
     .d-flex{
         display: flex;
         justify-content: space-between;
+        width: 100%;
     }
 
     .card-main{
         position: sticky;
         display: flex;
         padding: 37px 71px 37px 37px;
-        width: 910px;
-        left: 112px;
+        width: 72%;
+        // left: 112px;
         top: 573.14px;
         z-index: 3;
         background: linear-gradient(100.14deg, rgba(107, 117, 182, 0.15) 4.13%, rgba(39, 48, 145, 0.0045) 94.28%);
@@ -123,13 +124,15 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        width: 25%;
         
         .card-small{
             position: sticky;
             display: flex;
             padding: 12px;
             z-index: 3;
-            width: 279.76px;
+            // width: 279.76px;
             height: 115.6px;
 
             background: linear-gradient(100.14deg, rgba(107, 117, 182, 0.15) 4.13%, rgba(39, 48, 145, 0.0045) 94.28%);
