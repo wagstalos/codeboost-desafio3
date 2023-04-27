@@ -1,3 +1,10 @@
+@import '_mixins.scss';
+@import '_variables.scss';
+@import '_animations.scss';
+@import '_header.scss';
+@import '_s-hero.scss';
+@import '_s-details.scss';
+
 //reset
 *{
     margin: 0;
@@ -8,11 +15,9 @@
     outline: none;
     border: none;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Epilogue', sans-serif;
     font-size: 10px;
-}
-h1{
-    color:red;
+    // font-size: 1.4rem;
 }
 
 img{
@@ -26,6 +31,10 @@ html{
 
 html,body{
     overflow-x: hidden;
+    width: 100%;
+
+    background: rgb(76,69,112);
+    background: radial-gradient(circle, rgba(76,69,112,1) 0%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%);
 }
 
 button{
@@ -38,9 +47,31 @@ button{
     padding: 0 15px;
     margin: 0 auto;
 }
-@import '_mixins.scss';
-@import '_variables.scss';
-@import '_animations.scss';
-@import '_header.scss';
-@import '_s-hero.scss';
-@import '_s-brand.scss';
+
+.person{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.chair{
+    position: absolute;
+    top: 324px;
+    right: -139px;
+    z-index: 0;
+}
+
+.backpack{
+    position: absolute;
+    top: 540px;
+    left: 100px;
+    z-index: 0;
+}
+
+.pen{
+    position: absolute;
+    top: 940px;
+    left: -50px;
+    z-index: 0;
+}

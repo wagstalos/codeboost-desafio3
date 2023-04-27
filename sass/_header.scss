@@ -2,30 +2,98 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    height: 72px;
-    background-color: $gray-dark;
+    height: 90px;
     display: flex;
+
     .container{
         @include flex (row, center, space-between)
     }
+
     .itens{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 70%;
+        z-index: 2;
     }
+
+    .itens-right{
+        display: flex;
+
+        .icon-search{
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translate(-50%, -50%);
+        }
+
+        .itens-right__avatar{
+            width: 48px;
+            height: 48px;
+        }
+
+        .itens-right__notification{
+            margin: 0 25px!important;
+        }
+
+        img:last-child{
+            margin-left: 12px;
+        }
+    }
+
+    .itens-input{
+        box-sizing: border-box;
+        width: 296.74px;
+        height: 52px;
+        font-size: 14px;
+        position: relative;
+        caret-color:$pink;
+        color:$white;
+        background: linear-gradient(102.42deg, rgba(107, 117, 182, 0.084) 4.84%, rgba(115, 123, 197, 0.0825) 121.95%);
+        border: 0.5px solid #545179;
+        backdrop-filter: blur(41px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 159px;
+
+    }
+
+    ::placeholder {
+        font-size: 14px;
+        font-weight: 700;
+        color: #999;
+     }
+
     nav{
         ul{
             display: flex;
-            font-size: 1.4rem;
+        
             a{
                 color: $white;
+                font-size: 1.4rem;
             }
+
             li{
-                margin-right: 56px;
+                margin-right: 32px;
+                position: relative;
+
+                &.active{
+                    color:$white;
+    
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        width: 25px;
+                        height: 2px;
+                        background: $pink;
+                        bottom: 0;
+                        left: 0;
+                        top: 20px;
+                    }
+                }
             }
         }
     }
+
     button{
         color: $white;
         font-size: 1.4rem;

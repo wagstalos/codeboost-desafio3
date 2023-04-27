@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Codeboost</title>
+    <title>Desafio Gaminsany</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -13,24 +16,39 @@
     <header>
         <div class="container">
             <a href="#" class="logo">
-                <img src="img/brand.svg" alt=" Logo " />
+                <img src="img/brand.svg" alt="Logo" />
             </a>
             <div class="itens">
                 <nav>
                     <ul>
-                        <li>
-                            <a href="">Item menu 01 </a>
+                        <li class="active">
+                            <a href="">Home </a>
                         </li>
                         <li>
-                            <a href="">Item menu 02</a>
+                            <a href="">Descobrir</a>
                         </li>
                         <li>
-                            <a href="">Item menu 03</a>
+                            <a href="">Loja</a>
+                        </li>
+                        <li>
+                            <a href="">Ofertas</a>
                         </li>
                     </ul>
                 </nav>
-                <button class="btn-primary"> Link Action</button>
+
+                <div class="itens-right">
+                    <div class="itens-input">
+                        <input type="text" class="itens-input" placeholder="Pesquisa um jogo">
+                        <img class="icon-search" src="img/icon-search.svg" alt="">
+                    </div>
+
+                    <img class="itens-right__notification" src="/img/notification.svg" alt="icon notification">
+                    <img class="itens-right__avatar" src="/img/avatar.png" alt="">
+                    <img src="/img/arrow.svg" alt="">
+                </div>
+
             </div>
+
             <div class="icon-menu-mobile" id='menu-mob'>
                 <img src="img/menu-icon.svg" alt="menu mobile" class="">
                 <div class="menu-mobile" id="menu-mobile">
@@ -52,59 +70,152 @@
             </div>
 
         </div>
-
-
     </header>
 
     <section class="s-hero">
-        <div class="container s-hero__row">
-            <div class="s-hero__col--1">
-                <h1>Vulputate gravida feugiat lectus gravida tortor amet a phasellus.</h1>
-                <div>
-                    <ul>
-                        <li>
-                            <img src="img/icon.svg" alt="">
-                            <span>Nulla adipiscing amet, eu quam pellentesque id fames</span>
-                        </li>
-                        <li>
-                            <img src="img/icon.svg" alt="">
-                            <span>Nulla adipiscing amet, eu quam pellentesque id fames</span>
-                        </li>
-                        <li>
-                            <img src="img/icon.svg" alt="">
-                            <span>Nulla adipiscing amet, eu quam pellentesque id fames</span>
-                        </li>
-                    </ul>
+        <div class="container">
+            <ul>
+                <li>4 HR 55 MIN </li>
+                <li>2021</li>
+                <li>COOPERATIVO</li>
+                <li>AÇÃO</li>
+                <li>PUZZLE</li>
+            </ul>
+
+            <h1>Schooly gaming</h1>
+            <p>No papel de um estudante, você enfrentará valentões, será bode-expiatório de professores, irá pregar
+                peças, ganhar ou perder a garota e finalmente aprender a superar os obstáculos da pior escola da área
+            </p>
+
+            <button> Comprar o jogo</button>
+
+            <span>A partir de R$199,99</span>
+        </div>
+    </section>
+
+    <section class="s-details">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li class="active">Melhores partes</li>
+                    <li>Sinopse</li>
+                    <li> Galeria de fotos</li>
+                </ul>
+            </nav>
+
+            <div class="d-flex">
+
+                <div class="card-main">
+                    <img class="card-main__img" src="img/video.png" alt="video">
+
+                    <div class="card-main_inner">
+
+                        <div>
+                            <span class="tag">suspense</span>
+                            <span class="tag">ação</span>
+                            <h2>Ensino médio: nota zero</h2>
+                            <p>Se Bruno conseguir sobreviver ao ano escolar e for mais esperto que os seus rivais, ele
+                                poderá
+                                controlar a escola.</p>
+                        </div>
+
+                        <div class="card-main__footer">
+                            <button>Ver o trailer </button>
+                            <div class="card-main__footer--players">
+                                <img src="img/icon-user.svg" alt="">
+                                <p> 3.122 players</p>
+                            </div>
+
+                            <div class="card-main__footer--players">
+                                <img src="img/icon-star.svg" alt="">
+                                <p> 5/5 </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card-secundary">
+                    <div class="card-small">
+                        <img class="card-small__img" src="img/img-card1.png" alt="Primeiro dia na escola">
+
+                        <div class="card-small__inner">
+                            <div>
+                                <h3>Primeiro dia na escola</h3>
+                                <p>Capítulo I</p>
+                            </div>
+
+                            <div class="card-small__footer">
+                                <div class="card-small__footer--star">
+                                    <img src="img/icon-star.svg" alt="star">
+                                    <p> 5/5 </p>
+                                </div>
+
+                                <div>
+                                    <img src="img/icon-arrow-flat.svg" alt="icon flexa">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-small">
+                        <img class="card-small__img" src="img/img-card2.png" alt="Primeiro dia na escola">
+
+                        <div class="card-small__inner">
+                            <div>
+                                <h3>Convocando todos</h3>
+                                <p>Capítulo II</p>
+                            </div>
+
+                            <div class="card-small__footer">
+                                <div class="card-small__footer--star">
+                                    <img src="img/icon-star.svg" alt="star">
+                                    <p> 4.8/5 </p>
+                                </div>
+
+                                <div>
+                                    <img src="img/icon-arrow-flat.svg" alt="icon flexa">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-small">
+                        <img class="card-small__img" src="img/img-card3.png" alt="Primeiro dia na escola">
+
+                        <div class="card-small__inner">
+                            <div>
+                                <h3>O plano em ação</h3>
+                                <p>Capítulo III</p>
+                            </div>
+
+                            <div class="card-small__footer">
+                                <div class="card-small__footer--star">
+                                    <img src="img/icon-star.svg" alt="star">
+                                    <p> 4.7/5 </p>
+                                </div>
+
+                                <div>
+                                    <img src="img/icon-arrow-flat.svg" alt="icon flexa">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="s-hero__col--2">
-                <img src="img/credit-card.svg" alt="">
-                <form action="">
-                    <h3>Sem vitae elementum pretium placerat lobortis</h3>
-                    <p>Ut proin faucibus turpis orci in lec</p>
-                    <input type="text" name="input" placeholder=" Name">
-                    <input type="text" name="input" placeholder=" E-mail">
-                    <input type="text" name="input" placeholder=" Phone">
-                    <button> Button Action</button>
-                </form>
 
-            </div>
         </div>
-
     </section>
 
-    <section class="s-brand">
-        <div class="container">
-            <h4>Empresas que confiam</h4>
-            <div class="s-brand__logos">
-                <img src="img/spotfy.svg" alt="">
-                <img src="img/spotfy.svg" alt="">
-                <img src="img/spotfy.svg" alt="">
-                <img src="img/spotfy.svg" alt="">
-            </div>
-        </div>
+    <img class="person" src="img/person.png" alt="person">
+    <img class="chair floating2 element2" src="img/chair.png" alt="chair">
+    <img class="backpack floating element" src="img/backpack.png"alt="backpack">
+    <img class="pen floating2 element2" src="img/pen.png"alt="backpack">
 
-    </section>
     <script src="js/main.js"></script>
 </body>
 

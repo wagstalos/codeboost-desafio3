@@ -1,0 +1,171 @@
+.s-details{
+    color: $white;
+
+    h2{
+        font-size: 33px;
+        margin: 3rem 0;
+    }
+
+
+    p{
+        font-size: 1.4rem;
+        line-height: 150%;
+        max-width: 414px;
+        color: $gray-light;
+    }
+
+    .tag{
+        color: $blue-dark;
+        font-weight: 700;
+        width: 75px;
+        background-color: #01C2FF;
+        border-radius: 44px;
+        padding: 8px;
+        text-transform: uppercase;
+
+        &:first-child{
+            margin-right: 1rem;
+            background: $pink;
+        }
+    }
+
+    ul{
+        margin-top: 72px;
+        margin-bottom: 36px;
+        display: flex;
+       
+        li{
+            font-size: 1.4rem;
+            margin-right: 32px;
+            color: $gray-light;
+            position: relative;
+            
+            &.active{
+                color:$white;
+
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 25px;
+                    height: 2px;
+                    background: $pink;
+                    bottom: 0;
+                    left: 0;
+                    top: 20px;
+                }
+            }
+        }
+    }
+
+    .d-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-main{
+        position: sticky;
+        display: flex;
+        padding: 37px 71px 37px 37px;
+        width: 910px;
+        left: 112px;
+        top: 573.14px;
+        z-index: 3;
+        background: linear-gradient(100.14deg, rgba(107, 117, 182, 0.15) 4.13%, rgba(39, 48, 145, 0.0045) 94.28%);
+        border: 0.5px solid #545179;
+        backdrop-filter: blur(41px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 18px;
+
+        .card-main__img{
+            max-width: 254px;
+            margin-right: 16px;
+        }
+
+        .card-main_inner{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            width: 100%;
+        }
+
+        .card-main__footer{ 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .card-main__footer--players{
+               display: flex;
+               align-items: center;
+
+               img{
+                    margin-right: 4px;
+                    margin-top: -5px;
+               }
+            }
+
+            button{
+                width: 167px;
+                height: 48px;
+                left: 431px;
+                top: 859px;
+                color:$white;
+                font-size: 1.4rem;
+                border: 1px solid #FFFFFF;
+                border-radius: 11px;
+            }
+        }
+
+      
+    }
+
+    .card-secundary{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        .card-small{
+            position: sticky;
+            display: flex;
+            padding: 12px;
+            z-index: 3;
+            width: 279.76px;
+            height: 115.6px;
+
+            background: linear-gradient(100.14deg, rgba(107, 117, 182, 0.15) 4.13%, rgba(39, 48, 145, 0.0045) 94.28%);
+            border: 0.5px solid #545179;
+            backdrop-filter: blur(40.9642px);
+            /* Note: backdrop-filter has minimal browser support */
+            border-radius: 18px;
+
+            h3,p{
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-top: 8px;
+            }
+
+            .card-small__inner{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                width: 100%;
+            }
+
+            .card-small__footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+           .card-small__img{
+            margin-right: 20px;
+           }
+
+            .card-small__footer--star{
+                display: flex;
+                justify-items: center;
+            }
+        }
+    }
+}
