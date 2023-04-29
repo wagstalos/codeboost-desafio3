@@ -105,7 +105,7 @@
 
             <div class="d-flex">
 
-                <div class="card-main">
+                <div class="card-main js-tilt">
                     <img class="card-main__img" src="img/video.png" alt="video">
 
                     <div class="card-main_inner">
@@ -137,7 +137,7 @@
                 </div>
 
                 <div class="card-secundary">
-                    <div class="card-small">
+                    <div class="card-small js-tilt">
                         <img class="card-small__img" src="img/img-card1.png" alt="Primeiro dia na escola">
 
                         <div class="card-small__inner">
@@ -160,7 +160,7 @@
 
                     </div>
 
-                    <div class="card-small">
+                    <div class="card-small js-tilt">
                         <img class="card-small__img" src="img/img-card2.png" alt="Primeiro dia na escola">
 
                         <div class="card-small__inner">
@@ -183,7 +183,7 @@
 
                     </div>
 
-                    <div class="card-small">
+                    <div class="card-small js-tilt">
                         <img class="card-small__img" src="img/img-card3.png" alt="Primeiro dia na escola">
 
                         <div class="card-small__inner">
@@ -211,12 +211,31 @@
         </div>
     </section>
 
-    <img class="person floating element" src="img/person.png" alt="person">
+    <img class="person floating element js-tilt" src="img/person.png" alt="person">
     <img class="chair floating2 element2" src="img/chair.png" alt="chair">
-    <img class="backpack floating element" src="img/backpack.png"alt="backpack">
-    <img class="pen floating2 element2" src="img/pen.png"alt="backpack">
+    <img class="backpack floating element" src="img/backpack.png" alt="backpack">
+    <img class="pen floating2 element2" src="img/pen.png" alt="backpack">
 
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        $(".js-tilt").tilt({
+            glare: true,
+            maxGlare: 0.5,
+            scale: 1,
+            maxTilt: 10,
+            perspective:    1000,   // Transform perspective, the lower the more extreme the tilt gets.
+            easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+            speed:          300,    // Speed of the enter/exit transition.
+            transition:     true,   // Set a transition on enter/exit.
+            disableAxis:    false,   // What axis should be disabled. Can be X or Y.
+            reset:          true,   // If the tilt effect has to be reset on exit.
+            maxGlare:       1  
+        });
+    </script>
 </body>
 
 </html>
