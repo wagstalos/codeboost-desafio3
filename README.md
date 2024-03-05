@@ -2,7 +2,7 @@
 
 Desafio para Insany 
 
-link: 
+link: https://wagstalos.github.io/codeboost-gaminsany/
 
 #SASS
 #HTML
